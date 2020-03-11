@@ -65,10 +65,10 @@ const showMillionaires = () => {
 
 // Calculate wealth
 const calculate = () => {
-    const wealth = data.reduce((acc, user) => (acc += user.money), 0)
+    const wealth = data.reduce((acc, user) => (acc += user.money), 0);
 
     const wealthEl = document.createElement('div');
-    wealthEl.innerHTML = `<h3>Total Wealth: <stron>${formatMoney(wealth)}</stron></h3>`
+    wealthEl.innerHTML = `<h3>Total Wealth: <stron>${formatMoney(wealth)}</stron></h3>`;
     main.appendChild(wealthEl);
 };
 
